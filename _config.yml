@@ -1,0 +1,31 @@
+title: Theme Panda | Free Premium Themes
+description: Download Your Desired Premium Themes For Free
+baseurl: 
+url:
+languages: ["en", "ta"]
+defaultLang: en
+languageNames:
+  ta: Tamil
+  en: English
+author-name:   Natali Anderson
+author-avatar: 09.jpg
+facebook:  https://facebook.com/
+twitter:   https://twitter.com/
+instagram: https://www.instagram.com/
+pinterest: https://www.pinterest.com/
+disqus-identifier: mr-brown
+instafeed: true
+google-analytics: # Add your identifier. For example UA-99631805-1.
+mailchimp: 
+markdown: kramdown
+permalink: ':title/'
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+paginate: 7
+paginate_path: "/page/:num"
+include:
+  - _pages
+sass:
+  sass_dir: _sass
+  style: compressed
