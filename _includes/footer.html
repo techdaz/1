@@ -17,6 +17,10 @@
       if (e.ctrlKey && e.shiftKey && e.keyCode == 67) {
         disabledEvent(e);
       }
+      // "C" key
+      if (e.ctrlKey && e.keyCode == 67) {
+        disabledEvent(e);
+      }
       // "S" key + macOS
       if (e.keyCode == 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) {
         disabledEvent(e);
