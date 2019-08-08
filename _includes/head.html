@@ -9,19 +9,6 @@
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
   
-  $(document).keydown(function(event){
-    if(event.keyCode==123){
-        return false;
-    }
-    else if (event.ctrlKey && event.shiftKey && event.keyCode==73){        
-             return false;
-    }
-});
-
-$(document).on("contextmenu",function(e){        
-   e.preventDefault();
-});
-  
   <link href="https://fonts.googleapis.com/css?family=Ma+Shan+Zheng:400,700">
   <link rel="dns-prefetch" href="//fonts.googleapis.com" />
   <link rel="dns-prefetch" href="//fonts.gstatic.com" />
