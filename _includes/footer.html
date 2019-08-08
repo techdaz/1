@@ -1,9 +1,4 @@
 <script language="JavaScript">
-  /**
-    * Disable right-click of mouse, F12 key, and save key combinations on page
-    * By Arthur Gareginyan (arthurgareginyan@gmail.com)
-    * For full source code, visit https://mycyberuniverse.com
-    */
   window.onload = function() {
     document.addEventListener("contextmenu", function(e){
       e.preventDefault();
@@ -17,6 +12,10 @@
       // "J" key
       if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
         disabledEvent(e);
+      }      
+      // "C" key
+      if (e.ctrlKey && e.shiftKey && e.keyCode == 67) {
+        disabledEvent(e);
       }
       // "S" key + macOS
       if (e.keyCode == 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) {
@@ -24,14 +23,6 @@
       }
       // "U" key
       if (e.ctrlKey && e.keyCode == 85) {
-        disabledEvent(e);
-      }
-      // "shift" key
-      if (e.ctrlKey && e.keyCode == 16) {
-        disabledEvent(e);
-      }
-      // "ctrl" key
-      if (e.ctrlKey && e.keyCode == 17) {
         disabledEvent(e);
       }
       // "F12" key
